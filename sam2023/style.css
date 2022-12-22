@@ -53,7 +53,7 @@ body {
   background-color: #f8ecde;
 }
 
-a{
+a {
   color: #232526;
   text-decoration: none;
 
@@ -238,7 +238,7 @@ h2 {
 
 /********* #archivements *********/
 
-#archivements a{
+#archivements a {
   grid-column: span 3;
 }
 
@@ -314,7 +314,7 @@ h2 {
 
 /************** Old portfolio css  ************/
 
-#lastportfolio a{
+#lastportfolio a {
   grid-column: span 3;
 }
 
@@ -399,55 +399,103 @@ footer {
   text-align: center;
 }
 
+@media screen and (max-width: 1100px) {
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem;
+  }
+
+  .archievement-grid,
+  .lasportfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+  }
+
+  #archivements a,
+  .archivements-card,
+  #lastportfolio a {
+    grid-column: span 1;
+  }
+
+  .archivements-card,
+  .old-portfolio {
+    max-width: 350px;
+  }
+
+  #hero .hero-main h1 {
+    padding-top: 0.5rem;
+  }
+
+  #hero {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    margin-bottom: 1.2em;
+  }
+
+  #skills .marquee {
+    -webkit-text-stroke: 1px black;
+  }
+}
+
 /***************** MEDIA RESPONSIVE ***************/
 
-@media screen and (max-width: 900px){
-body{
-  margin: -50px;
-  overflow-x: hidden;
-}
-#hero{
-margin-left: -15px;
-margin-bottom: 4rem;
-}
-#hero .hero-main h1{
-  font-size: 3rem;
-  margin-bottom: 1.1rem;
-}
-#hero .hero-main div{
-  text-align: center;
-  margin-left: 15px;
-}
-#hero .hero-main p{
-  width: 250px;
-  margin-left: -40px;
-}
-#hero .hero-main img{
-  margin-top: 20px;
-  margin-bottom: 1.1rem;
-}
-#hero ul.links{
-padding: 0px
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #hero {
+    margin-bottom: 4rem;
+  }
+
+  #hero .hero-main {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero .hero-main img {
+    float: none;
+    shape-outside: none;
+    margin-inline-end: 0;
+  }
+
+  #hero .hero-main h1 {
+    font-size: 3rem;
+    margin-bottom: 1.1rem;
+  }
+
+  #hero .hero-main div {
+    text-align: center;
+  }
+
+  #hero .hero-main img {
+    margin-top: 20px;
+    margin-bottom: 1.1rem;
+  }
+
+  #hero ul.links {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+  }
+
+
 }
 
-section h2{
-  font-size: 2.5rem;
-}
-#skills, #archivements, #lastportfolio{
-  padding-left: 0px;
-  margin-left: 100px;
-}
-#skills{
-  
-}
-#skills .marquee{
- 
-}
-.archievement-grid, .lasportfolio-grid{
-  display: flex;
-  flex-direction: column;
-}
-.archivements-card, .old-portfolio{
-  width: 300px;
-}
+@media screen and (max-width: 600px) {
+
+  section {
+    padding: 0 4rem;
+  }
 }
