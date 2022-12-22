@@ -1,0 +1,177 @@
+body {
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  background: linear-gradient(40deg, #c5afb3, #3f5be8);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  color: white;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+.accueil{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    height: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin: 20px 0px 10px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.hide {
+  display: none;
+}
+a {
+  color: white;
+}
+.menu {
+  /* structure */
+  padding-left: 0;
+
+  /* presentation */
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  padding: 0.5em 0.25em;
+}
+
+form li {
+  display: flex;
+  align-items: baseline;
+}
+
+.standard-form label {
+  /* structure */
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+
+  /* presentation */
+  color: white;
+  text-align: right;
+}
+.standard-form ul {
+  /* structure */
+  padding-left: 0;
+
+  /* presentation */
+  list-style-type: none;
+}
+.standard-form ul li {
+  margin: 1em 0;
+}
+
+#address-book li i {
+  margin-left: 5px;
+}
+
+input,
+select,
+button,
+textarea {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+button:hover,
+input,
+select,
+textarea {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+}
+input {
+  width: 200px;
+  padding: 0 10px;
+}
+[type="submit"],
+select {
+  width: auto;
+  padding: 0 10px;
+}
+option {
+  color: #8e54bf;
+}
+
+.barre {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/***************** MEDIA RESPONSIVE ***************/
+
+@media screen and (min-width: 900px){
+.accueil{
+  width: 450px;
+  text-align: center;
+  font-size: 32px;
+  height: 50px;
+  opacity: 0.8;
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+h1{
+  font-size: 50px;
+}
+button {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 65px;
+  width: 65px;
+  border-radius: 5px;
+}
+.fa-plus,
+.fa-trash{
+  font-size: 40px;
+}
+.standard-form label{
+  font-size: 22px;
+  width: 278px;
+}
+ul{
+  padding-top: 25px;
+}
+li{
+  padding-bottom: 50px;
+}
+select, input{
+  height: 65px;
+  width: 400px;
+  font: inherit;
+}
+#name, #description{
+  font-size: 30px;
+}
+#lvl{
+  font-size: 20px;
+}
+#todo{
+  font-size: 50px;
+}
+[type="submit"]{
+  width: 198px;
+  font-size: 23px;
+}
+}

@@ -1,0 +1,21 @@
+
+jeu de la mouche {
+mettre un classement user 
+mettre musique 
+mettre tache de sang au kill  }
+
+
+finaliser le contact.php 
+{
+   -  revenir à la page avec une modification de texte : Message bien envoyé, merci. 
+    - vérifier la connexion entre mysql / php 
+
+
+}
+
+
+
+a mettre dans le filezilla  
+ MAJ 23/07 19:05
+home.html aim 
+contact.html 

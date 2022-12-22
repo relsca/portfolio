@@ -1,0 +1,148 @@
+body{
+    cursor: crosshair;
+    user-select: none;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url(41530.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: 'Arima', 'cursive';
+    font-family: 'Poppins', sans-serif;
+}
+
+.image{
+    width: 20%;
+    position: absolute;
+    animation: anim 8s forwards;
+  }
+   
+  .animated {
+    
+    animation: anim 8s forwards;
+  }
+    
+  @keyframes anim{
+      to {
+          top: -250px;
+          left: var(--left)
+      }
+  }
+
+
+h1{
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
+    background: rgb(2, 56, 2);
+    color: white;
+    margin: 10px 0px 10px;
+
+}
+h3{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 10rem;
+    color: rgb(16, 15, 15);
+    text-shadow: 0 0 3px white;
+}
+.timing{
+    text-align: center;
+    font-size: 8rem;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    
+}
+.refresh{
+    width: 150px;
+    margin: auto;
+}
+#timer{
+    color: green;
+}
+
+a{
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid ;
+}
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.accueil{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    height: 20px;
+    background: rgb(2, 56, 2);
+    border-radius: 10px;
+    margin: 20px 0px 10px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 700;
+}
+.accueil:hover{
+    background-color: rgb(84, 41, 5);
+    color: white;
+    transition: 1s
+
+}
+.song{
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    
+}
+button{
+    margin: 10px;
+}
+/* button{
+    width: fit-content;
+    margin-left: 43.4%;
+    position: absolute;
+} */
+
+@media only screen and (max-width: 700px) {
+    h1{
+        display: none;
+    }
+    body{
+        width: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+    .timing{
+        margin-top: -70px;
+        font-size: 70px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .refresh{
+        width: 100px;
+        bottom: 10px;
+        position: fixed;
+    }
+    .song{
+        display: flex;
+        justify-content: left;
+    }
+     button{
+        margin: 10px;
+        padding: 4px;
+    } 
+    h3{
+        font-size: 90px;
+    }
+    image{
+        width: 10%;
+    }
+    .accueil{
+        margin-top: 5px;
+    }
+
+
+};
